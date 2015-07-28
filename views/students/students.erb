@@ -1,0 +1,7 @@
+<p>Click the student whose name you want to change.</p>
+
+<ul>  
+  <% Student.all.each do |student| %>
+    <li><a href="/change_student_name_form/<%= student.id %>"><%= student.name %></a></li>
+  <% end %>
+</ul>

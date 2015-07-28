@@ -1,0 +1,10 @@
+<% if @error %>
+  <p>The student was not saved. Students must be old enough to drink.</p>
+<% end %>
+
+<form action="/save_student">
+  <input type="text" placeholder="Enter name!" name="name" value="<%= params["name"] %>">
+  <input type="number" placeholder="Enter age!" name="age" value="<%= params["age"] %>">
+  
+  <input type="submit">
+</form>

@@ -1,0 +1,7 @@
+<h1>All Questions</h1>
+
+<ul>
+  <% @questions.each do |question| %>
+    <li><%= question.content %> (asked by <%= question.student.name %> - TODO!!!!)</li>
+  <% end %>
+</ul>

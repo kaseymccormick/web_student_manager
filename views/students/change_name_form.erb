@@ -1,0 +1,14 @@
+<!--
+We don't need to know the student's ID here, but we will need it
+in the next step - to update the correct row in the database - so
+we store the ID in a hidden field in the form. Thus it'll be added
+into `params` for the "/change_student_name" route handler to use.
+-->
+
+<form action="/change_student_name">
+  <input type="name" name="name" placeholder="New name!!!">
+  
+  <input type="hidden" name="x" value="<%= params["x"] %>">
+  
+  <input type="submit">
+</form>
